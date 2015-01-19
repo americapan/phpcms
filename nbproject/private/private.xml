@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/show_goods.html</file>
+            <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/list_solution.html</file>
+            <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/category.html</file>
             <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/list.html</file>
+            <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/category_solution.html</file>
             <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/list_goods.html</file>
-            <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/show.html</file>
-            <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/header.html</file>
+            <file>file:/E:/wamp/www/phpcms/phpcms/templates/yingtian/content/category_goods.html</file>
         </group>
     </open-files>
 </project-private>

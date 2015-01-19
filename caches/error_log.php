@@ -314,3 +314,5 @@
 <?php exit;?>01-19 17:01:14 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
 <?php exit;?>01-19 17:01:26 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
 <?php exit;?>01-19 17:14:54 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-19 17:15:56 | 2 | date() expects parameter 2 to be long, string given | phpcms\modules\formguide\templates\formguide_edit.tpl.php | 31
+<?php exit;?>01-19 17:16:05 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
