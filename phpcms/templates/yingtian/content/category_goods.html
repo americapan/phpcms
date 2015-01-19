@@ -1,4 +1,5 @@
 {template "content","header_1"}
+
 <section class="LayoutMiddle pagewidth">
     <div style="clear:both;"></div>
     <aside class="LayoutLeftColumn">
@@ -89,9 +90,15 @@
             </div>    
             <table id="ctl45_dlItems" style="width:100%;border-collapse:collapse;" border="0" cellspacing="0">
                 <tbody>
+                    {php $js=0}
                     {pc:content action="lists" catid="$catid" num="10" order="id DESC" page="$page"}
-                    <tr>
-                        {loop $data $r}
+                    {loop $data  $r}
+                        {if $js%3==0}
+                            <tr>
+                        {/if}
+                       
+                            
+                            
                         <td class="ControlItem" style="border-width:0px;height:0px;width:33.33333%;">
                 <ac:layoutarea id="Item">
                     <ac:visibilityarea id="dvControlItem">      
@@ -110,7 +117,7 @@
                                         <span id="lblSalePriceArea_181_6162" class="lblSalePriceArea">
                                             {pc:get sql="select * from v9_goods_data where id=$r[id]" return="v"}
                                             {loop $v $p}                
-                                            <span id="lblSalePrice_181_6162" class="lblSalePrice">{$p[Price]}</span>    
+                                                <span id="lblSalePrice_181_6162" class="lblSalePrice">{$p[Price]}</span>    
                                             {/loop}
                                             {/pc}                                              
                                         </span>                                           
@@ -121,8 +128,11 @@
                     </ac:visibilityarea>
                 </ac:layoutarea>
                 </td>
+                {if $js%3==2}
+                    {/tr}
+                {/if}
+                {php $js++}
                 {/loop}
-                </tr>
                 <div id="pages" class="text-c">{$pages}</div>
                 {/pc}
                 </tbody>

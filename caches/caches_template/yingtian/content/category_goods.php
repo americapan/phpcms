@@ -1,4 +1,5 @@
 <?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header_1"); ?>
+
 <section class="LayoutMiddle pagewidth">
     <div style="clear:both;"></div>
     <aside class="LayoutLeftColumn">
@@ -89,9 +90,15 @@
             </div>    
             <table id="ctl45_dlItems" style="width:100%;border-collapse:collapse;" border="0" cellspacing="0">
                 <tbody>
+                    <?php $js=0?>
                     <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=11e982198282a77f17ebf8d7a1dede5e&action=lists&catid=%24catid&num=10&order=id+DESC&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 10;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>$catid,'order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>$catid,'order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
-                    <tr>
-                        <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                    <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                        <?php if($js%3==0) { ?>
+                            <tr>
+                        <?php } ?>
+                       
+                            
+                            
                         <td class="ControlItem" style="border-width:0px;height:0px;width:33.33333%;">
                 <ac:layoutarea id="Item">
                     <ac:visibilityarea id="dvControlItem">      
@@ -110,7 +117,7 @@
                                         <span id="lblSalePriceArea_181_6162" class="lblSalePriceArea">
                                             <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=fd620997da59a6b5ba2dd2c1747b9365&sql=select+%2A+from+v9_goods_data+where+id%3D%24r%5Bid%5D&return=v\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from v9_goods_data where id=$r[id] LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$v = $a;unset($a);?>
                                             <?php $n=1;if(is_array($v)) foreach($v AS $p) { ?>                
-                                            <span id="lblSalePrice_181_6162" class="lblSalePrice"><?php echo $p['Price'];?></span>    
+                                                <span id="lblSalePrice_181_6162" class="lblSalePrice"><?php echo $p['Price'];?></span>    
                                             <?php $n++;}unset($n); ?>
                                             <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>                                              
                                         </span>                                           
@@ -121,8 +128,11 @@
                     </ac:visibilityarea>
                 </ac:layoutarea>
                 </td>
+                <?php if($js%3==2) { ?>
+                    {/tr}
+                <?php } ?>
+                <?php $js++?>
                 <?php $n++;}unset($n); ?>
-                </tr>
                 <div id="pages" class="text-c"><?php echo $pages;?></div>
                 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                 </tbody>
