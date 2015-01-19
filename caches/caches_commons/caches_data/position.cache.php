@@ -24,6 +24,30 @@ return array (
     'siteid' => '1',
     'thumb' => '',
   ),
+  20 => 
+  array (
+    'posid' => '20',
+    'modelid' => '12',
+    'catid' => '28',
+    'name' => 'index Recommended',
+    'maxnum' => '20',
+    'extention' => '',
+    'listorder' => '0',
+    'siteid' => '1',
+    'thumb' => '',
+  ),
+  19 => 
+  array (
+    'posid' => '19',
+    'modelid' => '12',
+    'catid' => '28',
+    'name' => 'Best Sellers',
+    'maxnum' => '20',
+    'extention' => '',
+    'listorder' => '0',
+    'siteid' => '1',
+    'thumb' => '',
+  ),
   18 => 
   array (
     'posid' => '18',
@@ -156,12 +180,12 @@ return array (
     'siteid' => '1',
     'thumb' => '',
   ),
-  19 => 
+  21 => 
   array (
-    'posid' => '19',
+    'posid' => '21',
     'modelid' => '12',
     'catid' => '28',
-    'name' => 'Best Sellers',
+    'name' => 'Featured Items',
     'maxnum' => '20',
     'extention' => '',
     'listorder' => '0',

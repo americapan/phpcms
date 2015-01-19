@@ -312,7 +312,7 @@ return array (
     'issearch' => '0',
     'isadd' => '1',
     'isfulltext' => '1',
-    'isposition' => '0',
+    'isposition' => '1',
     'listorder' => '11',
     'disabled' => '0',
     'isomnipotent' => '0',
