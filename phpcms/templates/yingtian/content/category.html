@@ -16,7 +16,7 @@
                 {/pc}
                 <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>
                 <div id="ctl27_dvControlHeader" class="ControlHeader ControlHeader_359">Product Categories</div>
-                {pc:content action="category" catid="28" num="25" siteid="$siteid" order="listorder ASC"}
+                 {pc:content action="category" catid="28" num="25" siteid="$siteid" order="listorder ASC"}
                 {loop $data $r}
                 <div class="ControlItem ControlItem_359">
                     <div class="ControlLink ControlLink_359">
@@ -27,8 +27,8 @@
                 {/pc}
                 <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>	
 
-                <div class="ControlHeader ControlHeader_359" style="margin-top:20px;">Recommended222</div>
-                 {pc:content action="position" posid="10"  num="25"  order="listorder ASC"}
+                <div class="ControlHeader ControlHeader_359" style="margin-top:20px;">Recommended111</div>
+                {pc:content action="position" posid="10"  num="25"  order="listorder ASC"}
                 {loop $data $r}
                 <div class="ControlItem ControlItem_359">
                     <div class="ControlLink ControlLink_359">
@@ -46,11 +46,10 @@
     <section class="LayoutContent">
         <div class="LayoutContentInner">
             <span id="lblCategoryTrail" class="CategoryCategoryTrail">
-                <a href="{siteurl($siteid)}">Home</a> &gt;{catpos($catid)}
+               <a href="{siteurl($siteid)}">Home</a> &gt;{catpos($catid)}
             </span><br><br>
             <div><span id="lblCategoryHeader" class="CategoryCategoryHeader"></span></div>
-            <div id="dvWrapControl2250" style="clear: both;">
-                <div id="ctl45_dvControl" class="Control ProductDisplay Control_2250">
+            <div id="dvWrapControl2250" style="clear: both;;"><div id="ctl45_dvControl" class="Control ProductDisplay Control_2250">
                     <div id="ctl45_dvControlHeader" class="ControlHeader ControlHeader_2250">{$CATEGORYS[$catid][catname]}</div>
                     <div id="text_list">
                         {pc:content action="lists" catid="$catid" num="25" order="id DESC" page="$page"}
@@ -62,7 +61,7 @@
                         </ul>
                          <div class="pagenavi">{$pages}</div>
                         {/pc}
-                       
+                        
                     </div>
                 </div>
                 <div style="clear:both"></div>

@@ -295,3 +295,21 @@
 <?php exit;?>01-19 13:52:37 | 2 | Division by zero               | caches\caches_template\yingtian\content\category_goods.php | 99
 <?php exit;?>01-19 14:15:46 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
 <?php exit;?>01-19 14:17:00 | 2 | rmdir(E:/wamp/www/phpcms/caches/caches_template/yingtian/): Directory not empty | phpcms\libs\functions\dir.func.php | 154
+<?php exit;?>01-19 16:08:56 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>01-19 16:11:21 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>01-19 16:12:58 | 2 | Illegal string offset 'allowmultisubmit' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 43
+<?php exit;?>01-19 16:12:58 | 2 | Illegal string offset 'allowmultisubmit' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 44
+<?php exit;?>01-19 16:12:58 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 48
+<?php exit;?>01-19 16:12:58 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 49
+<?php exit;?>01-19 16:13:46 | 2 | require(E:\wamp\www\phpcms\phpcms\modules\formguide\fields\\config.inc.php): failed to open stream: No such file or directory | phpcms\modules\formguide\formguide_field.php | 300
+<?php exit;?>01-19 16:21:40 | 2 | date() expects parameter 2 to be long, string given | phpcms\modules\formguide\templates\formguide_edit.tpl.php | 31
+<?php exit;?>01-19 16:28:21 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-19 16:48:29 | 2 | Missing argument 2 for category::delete_child(), called in E:\wamp\www\phpcms\phpcms\modules\admin\category.php on line 347 and defined | phpcms\modules\admin\category.php | 342
+<?php exit;?>01-19 16:59:51 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 17:00:15 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 17:00:22 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 17:00:38 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 17:00:55 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 17:01:05 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 17:01:14 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 17:01:26 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
