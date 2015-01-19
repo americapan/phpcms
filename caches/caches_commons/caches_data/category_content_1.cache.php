@@ -146,7 +146,7 @@ return array (
     'parentdir' => 'ProductCategories/',
     'catdir' => 'CoalLab',
     'url' => 'http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=10',
-    'items' => '1',
+    'items' => '2',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -205,7 +205,7 @@ return array (
   \'content_ishtml\' => \'0\',
   \'create_to_html_root\' => \'0\',
   \'template_list\' => \'yingtian\',
-  \'category_template\' => \'category\',
+  \'category_template\' => \'category_goods\',
   \'list_template\' => \'list_goods\',
   \'show_template\' => \'show_goods\',
   \'meta_title\' => \'\',
@@ -248,7 +248,7 @@ return array (
     'parentdir' => 'ProductCategories/FoodLab/',
     'catdir' => 'Submenu1',
     'url' => 'http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=12',
-    'items' => '1',
+    'items' => '2',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -299,7 +299,7 @@ return array (
     'parentdir' => 'ProductCategories/FoodLab/',
     'catdir' => 'Submenu2',
     'url' => 'http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=13',
-    'items' => '1',
+    'items' => '2',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -350,7 +350,7 @@ return array (
     'parentdir' => 'ProductCategories/',
     'catdir' => 'PetroleumLab',
     'url' => 'http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=14',
-    'items' => '1',
+    'items' => '2',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',
@@ -401,7 +401,7 @@ return array (
     'parentdir' => 'ProductCategories/',
     'catdir' => 'BiochemicalLab',
     'url' => 'http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=15',
-    'items' => '1',
+    'items' => '2',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',

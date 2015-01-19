@@ -19,7 +19,7 @@
         <![endif]-->
     </head>
     
-    <body class="<?php if(in_array($catid,array('','10','11','12','13','14','15','16','17','28'))) { ?>OneColumn<?php } else { ?>LeftColumn<?php } ?>">
+    <body class="LeftColumn">
         <div class="Layout">
             <header class="LayoutTop">
                 <div class="inner pagewidth">

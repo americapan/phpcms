@@ -14,6 +14,7 @@ return array(
             'category.html' => '文章频道页',
             'category_download.html' => '下载频道页',
             'category_picture.html' => '图片频道页',
+            'category_goods.html' => '商品频道页',
             'download.html' => '下载连接页',
             'footer.html' => '底部',
             'header.html' => '顶部',
