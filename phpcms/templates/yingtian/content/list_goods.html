@@ -1,0 +1,89 @@
+{template "content","header"}
+<section class="LayoutMiddle pagewidth">
+    <div style="clear:both;"></div>
+    <aside class="LayoutLeftColumn">
+        <div class="LayoutLeftColumnInner">
+            <div id="ctl27_dvControl" class="Control CategoryNavigationLinks Control_359">
+                <div id="ctl27_dvControlHeader" class="ControlHeader ControlHeader_359">Product Categories</div>
+                {pc:content action="category" catid="28" num="25" siteid="$siteid" order="listorder ASC"}
+                {loop $data $r}
+                <div class="ControlItem ControlItem_359">
+                    <div class="ControlLink ControlLink_359">
+                        <a href="{$r[url]}" title="{$r[catname]}" class="ControlLink_Link ControlLink_Link_359">{$r[catname]}</a>
+                    </div>
+                </div>
+                {/loop}
+                {/pc}
+                <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>	
+
+                <div class="ControlHeader ControlHeader_359" style="margin-top:20px;">Recommended</div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=4" title="Food Lab Product Title 4" class="ControlLink_Link ControlLink_Link_359">Food Lab Product Title 4</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=2" title="Food Lab Product Title 2" class="ControlLink_Link ControlLink_Link_359">Food Lab Product Title 2</a></div></div>
+                <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>	
+            </div>
+
+            <div id="ctl28_dvControlHeader" class="ControlHeader ControlHeader_528"></div>
+        </div>
+    </aside>
+    <section class="LayoutContent">
+        <div class="LayoutContentInner">
+            <span id="lblCategoryTrail" class="CategoryCategoryTrail">
+                <a href="{siteurl($siteid)}">Home</a> &gt;{catpos($catid)}
+            </span><br><br>
+            <div><span id="lblCategoryHeader" class="CategoryCategoryHeader"></span></div>
+            <div id="dvWrapControl2250" style="clear: both;">
+                <div id="ctl45_dvControl" class="Control ProductDisplay Control_2250">
+                    <div id="ctl45_dvControlHeader" class="ControlHeader ControlHeader_2250">Best Sellers</div>
+                    <table id="ctl45_dlItems" style="width:100%;border-collapse:collapse;" border="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td class="ControlItem" style="border-width:0px;height:0px;width:33.33333%;">
+                        <ac:layoutarea id="Item">
+                            <ac:visibilityarea id="dvControlItem">      
+                                <div class="FeaturedItemsItem">
+                                    <div class="FeaturedItemsThumbNail FeaturedItemsThumbNail_2250"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=2" title="Food Lab Product Title 2" id="ctl45_dlItems_ctl00_lnkThumbnail"><img id="ctl45_dlItems_ctl00_iThumbnail" class="FeaturedItemsThumbNail FeaturedItemsThumbNail_2250" src="Coal%20Lab%20-%20Onestop%20Laboratory%20Equipment%20-%20www.labapex.com_files/pro_2.jpg" alt="Food Lab Product Title 2" style="border-width:0px;" height="122" width="178"></a></div>
+                                    <div class="FeaturedItemsPriceTab">
+                                        <div class="FeaturedItemsName"><a id="ctl45_dlItems_ctl00_hlProductName" class="ControlLink ControlLink_2250" href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=2" title="Food Lab Product Title 2">Food Lab Product Title 2</a></div>
+                                        <div class="FeaturedItemsPrice"><span id="ctl28_dlItems_ctl01_ltrPrice"><span id="lblSalePriceArea_181_6162" class="lblSalePriceArea"><span id="lblSalePriceLabel_181_6162" class="lblSalePriceLabel">Sale: </span><span id="lblSalePrice_181_6162" class="lblSalePrice">236.50</span></span></span></div>
+                                    </div>
+                                </div>
+                            </ac:visibilityarea>
+                        </ac:layoutarea>
+                        </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div id="dvNavTop">
+                <div class="ControlHeader ControlHeader_2250">Product List</div>
+            </div>    
+            <table id="ctl45_dlItems" style="width:100%;border-collapse:collapse;" border="0" cellspacing="0">
+                <tbody>
+                    <tr>
+
+                        <td class="ControlItem" style="border-width:0px;height:0px;width:33.33333%;">
+                <ac:layoutarea id="Item">
+                    <ac:visibilityarea id="dvControlItem">      
+                        <div class="FeaturedItemsItem">
+                            <div class="FeaturedItemsThumbNail FeaturedItemsThumbNail_2250"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=3" title="Food Lab Product Title 3" id="ctl45_dlItems_ctl00_lnkThumbnail"><img id="ctl45_dlItems_ctl00_iThumbnail" class="FeaturedItemsThumbNail FeaturedItemsThumbNail_2250" src="Coal%20Lab%20-%20Onestop%20Laboratory%20Equipment%20-%20www.labapex.com_files/pro_3.jpg" alt="Food Lab Product Title 3" style="border-width:0px;" height="122" width="178"></a></div>
+                            <div class="FeaturedItemsPriceTab">
+                                <div class="FeaturedItemsName"><a id="ctl45_dlItems_ctl00_hlProductName" class="ControlLink ControlLink_2250" href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=3" title="Food Lab Product Title 3">Food Lab Product Title 3</a></div>
+                                <div class="FeaturedItemsPrice"><span id="ctl28_dlItems_ctl01_ltrPrice"><span id="lblSalePriceArea_181_6162" class="lblSalePriceArea"><span id="lblSalePriceLabel_181_6162" class="lblSalePriceLabel">Sale: </span><span id="lblSalePrice_181_6162" class="lblSalePrice">632.90 RMB</span></span></span></div>
+                            </div>
+                        </div>
+                    </ac:visibilityarea>
+                </ac:layoutarea>
+                </td>
+
+                </tr>
+                </tbody>
+            </table>
+            <div style="clear:both"></div>
+            <div class="pagenavi"></div>
+        </div>
+        <div style="clear:both"></div>
+    </section>
+</section>
+{template "content","footer"}
