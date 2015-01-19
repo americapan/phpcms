@@ -293,3 +293,5 @@
 <?php exit;?>01-19 13:46:41 | 2 | Cannot use a scalar value as an array | caches\caches_template\yingtian\content\category_goods.php | 118
 <?php exit;?>01-19 13:52:37 | 2 | Division by zero               | caches\caches_template\yingtian\content\category_goods.php | 99
 <?php exit;?>01-19 13:52:37 | 2 | Division by zero               | caches\caches_template\yingtian\content\category_goods.php | 99
+<?php exit;?>01-19 14:15:46 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>01-19 14:17:00 | 2 | rmdir(E:/wamp/www/phpcms/caches/caches_template/yingtian/): Directory not empty | phpcms\libs\functions\dir.func.php | 154

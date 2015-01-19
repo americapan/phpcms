@@ -64,8 +64,8 @@ return array (
     'hits' => '0',
     'setting' => 'array (
   \'ishtml\' => \'1\',
-  \'template_list\' => \'\',
-  \'page_template\' => \'page\',
+  \'template_list\' => \'yingtian\',
+  \'page_template\' => \'page_about\',
   \'meta_title\' => \'关于我们\',
   \'meta_keywords\' => \'关于我们\',
   \'meta_description\' => \'关于我们\',

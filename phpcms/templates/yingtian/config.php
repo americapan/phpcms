@@ -27,6 +27,7 @@ return array(
             'list_picture.html' => '图片列表页',
             'message.html' => '消息提示页',
             'page.html' => '单网页',
+            'page_about.html'=>'关于我们',
             'rss.html' => 'RSS页',
             'search.html' => '搜索',
             'show.html' => '文章内容页',

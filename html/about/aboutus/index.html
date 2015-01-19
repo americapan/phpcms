@@ -1,83 +1,233 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>PHPCMS演示站</title>
-<meta name="keywords" content="关于我们">
-<meta name="description" content="关于我们">
-<link href="http://localhost/phpcms/statics/css/reset.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://localhost/phpcms/statics/js/jquery.min.js"></script>
-<style type="text/css">
-body {background: url(http://localhost/phpcms/statics/images/v9/about_bg.png) repeat-x;}
-#header{ height:94px;}
-#header .logo{ padding:0 100px 0 20px;float:left;}
-.log{line-height:24px; height:24px;float:right; font-size:12px}
-.log{color:#c7c5c5; margin-top:40px}
-.log a{color:#6f6f6f;text-decoration: none;}
-.log a:hover{text-decoration: underline;}
-#header .content{width:880px; margin:auto; height:60px;padding:10px 0 0 0}
-#content{width:920px; margin:auto; padding:14px 0 0 0}
-.left-nav{width:210px; height:399px; padding-top:10px}
-.left-nav h1,.left-nav .content li,.left-nav .content li.cur a,.left-nav .bottom{background: url(http://localhost/phpcms/statics/images/v9/about_left.png) no-repeat right top}
-.left-nav h1{display:block; height:40px; text-indent:-999px; overflow:hidden}
-.left-nav .content{background: url(http://localhost/phpcms/statics/images/v9/about_left_bg.png) repeat-y right top; padding-left:44px}
-.left-nav .content li{background-position: right -102px; display:block; height:30px; line-height:30px; font-size:14px}
-.left-nav .content li a{display:block; height:25px; line-height:25px; padding-left:14px; color:#6f6f6f}
-.left-nav .content li.cur a{background-position: left -72px;  font-weight:700; color:#0d4b9b}
-.left-nav .bottom{background-position: right -168px; height:216px}
-.col-auto{ padding:0 25px}
-.col-auto .title{font-size:25px;padding:5px 0 0;background: url(http://localhost/phpcms/statics/images/uline.gif) repeat-x left bottom; margin-bottom:15px}
-.col-auto .content p{ margin-bottom:15px; font-size:14px; line-height:25px; color:#6f6f6f}
-.footer{color:#666; line-height:24px;width:920px; margin:auto; text-align:center; padding:12px 0; margin-top:52px; border-top:1px solid #e5e5e5}
-.footer p.info a{color:#666;}
-</style>
-</head>
-<body>
-<div id="header">
-	<div class="content">
-	<div class="logo"><img src="http://localhost/phpcms/statics/images/v9/logo.jpg" height="60" /></div>
-    <span class="rt log"><a href="http://localhost/phpcms">首页</a> | <a href="http://localhost/phpcms/index.php?m=member&c=index&a=login">登录</a> | <a href="http://localhost/phpcms/index.php?m=member&c=index&a=register">注册</a></span>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="x-ua-compatible" content="IE=EmulateIE9"/>
+        <title>Company Profile - PHPCMS演示站</title>
+        <meta name="keywords" content="Company,Profile"/>
+        <meta name="description" content="关于我们"/>
+        <link rel="stylesheet" type="text/css" href="http://localhost/phpcms/statics/css/yingtian/style.css"></link>
+        <script type="text/javascript" src="http://localhost/phpcms/statics/js/yingtian/jquery.js"></script>
+        <script type="text/javascript" src="http://localhost/phpcms/statics/js/yingtian/ac_modal.js"></script>
+        <script type="text/javascript" src="http://localhost/phpcms/statics/js/yingtian/ac_002.js"></script>
+        <script type="text/javascript" src="http://localhost/phpcms/statics/js/yingtian/ac.js"></script>
+        <!--[if lt IE 9]>
+        <script src="http://localhost/phpcms/statics/js/yingtian/html5.js"></script>
+        <![endif]-->
+        <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    </head>
+    
+    <body class="OneColumn">
+        <div class="Layout">
+            <header class="LayoutTop">
+                <div class="inner pagewidth">
+                    <div class="LayoutTopMiddle">
+                        <div class="LayoutTopLeft">
+                            <div class="Control Control_306">
+                                <a href="http://localhost/phpcms" title="Onestop - Hebi City Thermal Meter Instrument Factory"><img src="http://localhost/phpcms/statics/images/yingtian/logo.png" alt="Onestop - Hebi City Thermal Meter Instrument Factory" style="margin-top:12px; margin-left:15px;"/></a>
+                                <a class="mobilecall" href="tel:+86-392-3311689"><img src="http://localhost/phpcms/statics/images/yingtian/blank.png" style="margin-left:315px;margin-top:-65px;float:left;"/></a>
+                            </div>
+                        </div>
+                        <div class="LayoutTopRight">
+                            <div class="Control Control_309">
+                                <div id="utilnav">
+                                    <div id="utilnav">
+                                        <div class="Control Control_311">
+                                            <form action="http://demo.cmsyou.com/blacken/index.php" method="get" target="_blank">
+                                                <input name="m" value="search" type="hidden"/>
+                                                <input name="c" value="index" type="hidden"/>
+                                                <input name="a" value="init" type="hidden"/>
+                                                <input name="typeid" value="3" id="typeid" type="hidden"/>
+                                                <input name="siteid" value="1" id="siteid" type="hidden"/>
+                                                <input class="AutocompleteSearchBox" name="q" id="q" value="Search Products" onfocus="if (this.value == 'Search Products')this.value = ''" onblur="if (this.value == '')this.value = 'Search Products'" onkeydown="if ((event.which & amp; & amp; event.which == 13) || (event.keyCode & amp; & amp; event.keyCode == 13)){universalSearchUrl('txt_input'); return false; } else return true;" onkeypress="if ((event.which & amp; & amp; event.which == 13) || (event.keyCode & amp; & amp; event.keyCode == 13)){universalSearchUrl('txt_input'); return false; } else return true;" type="text"/>
+                                                <input name="btnSearchBox" class="ThemeButton GoThemeButton SearchGoThemeButton" title="Search" value="Go" type="submit"/>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="LayoutTopBottom">
+                        <div id="leftRibbon"></div>
+                        <div id="rightRibbon"></div>
+                        <div class="inner">
+                            <!--一级导航栏结束-->
+                            <div class="HorizontalNav Control Control_312">
+                                                                                                <div class="HorizontalNavItem ControlLink_312">
+                                    <a class="HorizontalNavLink_312" href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=10">Coal Lab</a>
+                                    <div class="HorizontalNavSeperator ControlLinkSeperator_312"></div>
+                                     <!--是否有子栏目-->
+                                    <div class="SubMenu">
+                                                                                <!--子栏目循环结束-->
+                                                                            </div>
+                                    
+                                </div>
+                                                                <div class="HorizontalNavItem ControlLink_312">
+                                    <a class="HorizontalNavLink_312" href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=11">Food Lab</a>
+                                    <div class="HorizontalNavSeperator ControlLinkSeperator_312"></div>
+                                     <!--是否有子栏目-->
+                                    <div class="SubMenu">
+                                                                                <!--子栏目循环开始-->
+                                        <div class="SubMenuItem">
+                                            <a href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=12">Submenu 1</a>
+                                        </div>
+                                        <div class="SubMenuItemSeparator"></div>
+                                        <!--子栏目循环开始-->
+                                        <div class="SubMenuItem">
+                                            <a href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=13">Submenu 2</a>
+                                        </div>
+                                        <div class="SubMenuItemSeparator"></div>
+                                        <!--子栏目循环结束-->
+                                                                            </div>
+                                    
+                                </div>
+                                                                <div class="HorizontalNavItem ControlLink_312">
+                                    <a class="HorizontalNavLink_312" href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=14">Petroleum Lab</a>
+                                    <div class="HorizontalNavSeperator ControlLinkSeperator_312"></div>
+                                     <!--是否有子栏目-->
+                                    <div class="SubMenu">
+                                                                                <!--子栏目循环结束-->
+                                                                            </div>
+                                    
+                                </div>
+                                                                <div class="HorizontalNavItem ControlLink_312">
+                                    <a class="HorizontalNavLink_312" href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=15">Biochemical Lab</a>
+                                    <div class="HorizontalNavSeperator ControlLinkSeperator_312"></div>
+                                     <!--是否有子栏目-->
+                                    <div class="SubMenu">
+                                                                                <!--子栏目循环结束-->
+                                                                            </div>
+                                    
+                                </div>
+                                                                <div class="HorizontalNavItem ControlLink_312">
+                                    <a class="HorizontalNavLink_312" href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=16">Environment Lab</a>
+                                    <div class="HorizontalNavSeperator ControlLinkSeperator_312"></div>
+                                     <!--是否有子栏目-->
+                                    <div class="SubMenu">
+                                                                                <!--子栏目循环结束-->
+                                                                            </div>
+                                    
+                                </div>
+                                                                <div class="HorizontalNavItem ControlLink_312">
+                                    <a class="HorizontalNavLink_312" href="http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=17">Mobile Lab</a>
+                                    <div class="HorizontalNavSeperator ControlLinkSeperator_312"></div>
+                                     <!--是否有子栏目-->
+                                    <div class="SubMenu">
+                                                                                <!--子栏目循环结束-->
+                                                                            </div>
+                                    
+                                </div>
+                                                                                                <div style="clear:both;"></div>
+                            </div>
+                            <!--一级导航栏结束-->
+                            <!--网站介绍开始-->
+                            <div id="ctl43_spHorizontalNav" class="HorizontalNav Control Control_313">
+                                                                <div class="HorizontalNavItem ControlLink_313"><a href="http://localhost/phpcms">Home</a></div>
+                                                                <div class="HorizontalNavItem ControlLink_313"><a href="http://localhost/phpcms/html/about/aboutus/" title="About us">About us</a></div>
+                                                                <div class="HorizontalNavItem ControlLink_313"><a href="http://localhost/phpcms/html/about/contactus/" title="Contact">Contact</a></div>
+                                                                <div class="HorizontalNavItem ControlLink_313"><a href="http://localhost/phpcms/html/about/Inquiry/" title="Inquiry">Inquiry</a></div>
+                                                                <div class="HorizontalNavItem ControlLink_313"><a href="http://localhost/phpcms/html/about/Technicaldocuments/" title="Technical documents">Technical documents</a></div>
+                                                                <div class="HorizontalNavItem ControlLink_313"><a href="http://localhost/phpcms/html/about/Solution/" title="Solution">Solution</a></div>
+                                                                                                <div style="clear:both;"></div>
+                            </div>
+                            <!--网站介绍结束-->
+                        </div>
+                    </div>
+                </div>
+                <div class="pagewidth">
+                </div>
+            </header>             <section class="LayoutMiddle pagewidth">
+            <section class="LayoutContent">
+                <div itemscope="" itemtype="http://schema.org/Product" class="LayoutContentInner">
+                    <h2>Company Profile</h2>
+                    <p>We are a professional manufacture of lab analysis equipment and sample making machine. We certified the National Manufacturing Measuring Instruments Certificate and ISO Certification. We are honored as the High-tech Product Manufacturer by Henan Province Science and Technology Commission.</p>
+<p>Our factory features in long manufacturing history, high technology and advanced processing equipment. We have a long term cooperation with national technology department to develop new advanced coal analysis and other equipment.</p>
+<p>Our product are recommended by National Ministry of Coal Industry , National Quality Inspection and Testing Center, Ministry of Coal Industry Production Coordination Division, Beijing Coal Industry Institute, National Electric Power Research Institute, Electrical Department, Geology Ministry and National Institute of Metrology.</p>
+<p>APEX is a one - stop supplier of coal testing equipment, chemical instruments, civil engineering lab equipments, soil and petroleum testing equipments, NDT equipments, food lab equipment, pathology lab equipments and other testing equipments. Our professional engineer team provides complete solution and training service for laboratory.</p>
+                </div>
+                <div style="clear:both"></div>
+            </section>
+        </section>
+<footer class="LayoutBottom">
+    <div class="FooterTop pagewidth">
     </div>
-</div><div id="content">
-	<div class="col-left left-nav">
-    	<h1>关于我们</h1>
-    	<ul class="content">
-        	                <li class="cur"><a href="http://localhost/phpcms/html/about/aboutus/">About us</a></li>
-			                <li><a href="http://localhost/phpcms/html/about/contactus/">Contact</a></li>
-			                <li><a href="http://localhost/phpcms/html/about/Inquiry/">Inquiry</a></li>
-			                <li><a href="http://localhost/phpcms/html/about/Technicaldocuments/">Technical documents</a></li>
-			                <li><a href="http://localhost/phpcms/html/about/Solution/">Solution</a></li>
-			        </ul>
-        <div class="bottom"></div>
-    </div>
-  <div class="col-auto">
-    	<img src="http://localhost/phpcms/statics/images/v9/about_ad.png" width="659" height="171" />
-    	<h1 class="title"></h1>
-        <div class="content">
-        	            </div>
-    </div>
- </div>
-<div class="footer">
-<p class="info">
-<a href="http://localhost/phpcms/html/about/aboutus/" target="_blank">About us</a> |  
-<a href="http://localhost/phpcms/html/about/contactus/" target="_blank">Contact</a> |  
-<a href="http://localhost/phpcms/html/about/Inquiry/" target="_blank">Inquiry</a> |  
-<a href="http://localhost/phpcms/html/about/Technicaldocuments/" target="_blank">Technical documents</a> |  
-<a href="http://localhost/phpcms/html/about/Solution/" target="_blank">Solution</a> |  
-<a href="http://localhost/phpcms/index.php?m=link" target="_blank">友情链接</a>
-<br />
-Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>V9.5.8</em> &copy; 2011 <img src="http://localhost/phpcms/statics/images/copyright.gif"/></p>
+    <div class="fullwrap">
+        <div class="inner pagewidth">
+            <div class="FooterLeft">
+                <div class="Control Control_322">
+                    <h3>About Onestop</h3>
+                    <p style="text-align: left;">ONESTOP-Hebi City Thermal 
+                        Meter Instrument Factory is a leading supplier of laboratory equipment 
+                        for both public and private industry and universities. We can provide 
+                        the everyday testing items as well as the more technical equipment like 
+                        biochemical lab equip and industrial hygiene devices. Our customers 
+                        include construction, manufacturing, energy and government institutions 
+                        home and abroad. Established in 1980’s. Our focus has been and always 
+                        will be on Customer Service and Attention-to-Detail. We encourage you to
+                        browse our family of websites or contact us for assistance. Thank you.</p>
+                </div>
+            </div>
+            <div class="FooterRight">
+                <div id="ctl45_dvControl" class="Control LinkGroup Control_324 Control_324 Control_324">
+                    <div id="ctl45_dvControlHeader" class="ControlHeader ControlHeader_324">Useful Links</div>
+                                                            <div class="ControlLink ControlLink_324">
+                        <a class="ControlLink_Link ControlLink_Link_324" href="http://localhost/phpcms/html/about/aboutus/" title="About us">About us</a>
+                    </div>
+                    <div class="ControlLinkSeperator ControlLinkSeperator_324"></div>
+                                        <div class="ControlLink ControlLink_324">
+                        <a class="ControlLink_Link ControlLink_Link_324" href="http://localhost/phpcms/html/about/contactus/" title="Contact">Contact</a>
+                    </div>
+                    <div class="ControlLinkSeperator ControlLinkSeperator_324"></div>
+                                        <div class="ControlLink ControlLink_324">
+                        <a class="ControlLink_Link ControlLink_Link_324" href="http://localhost/phpcms/html/about/Inquiry/" title="Inquiry">Inquiry</a>
+                    </div>
+                    <div class="ControlLinkSeperator ControlLinkSeperator_324"></div>
+                                        <div class="ControlLink ControlLink_324">
+                        <a class="ControlLink_Link ControlLink_Link_324" href="http://localhost/phpcms/html/about/Technicaldocuments/" title="Technical documents">Technical documents</a>
+                    </div>
+                    <div class="ControlLinkSeperator ControlLinkSeperator_324"></div>
+                                        <div class="ControlLink ControlLink_324">
+                        <a class="ControlLink_Link ControlLink_Link_324" href="http://localhost/phpcms/html/about/Solution/" title="Solution">Solution</a>
+                    </div>
+                    <div class="ControlLinkSeperator ControlLinkSeperator_324"></div>
+                                                            <div style="clear:both;"></div>
+                </div>
+                <div class="Control Control_326">
+                    <h3>Stay in Touch</h3>
+                    <ul class="social">
+                        <li><a href="#" title="Fan Us on Facebook"><img src="http://localhost/phpcms/statics/images/yingtian/fb-glass-icon-small.png" alt="Fan Us on Facebook" title="Fan Us on Facebook" height="36" width="35"></a></li>
+                        <li><a href="#" title="Follow Us on Twitter"><img src="http://localhost/phpcms/statics/images/yingtian/twitter-glass-icon-small.png" alt="Follow Us on Twitter" title="Follow Us on Twitter" height="36" width="35"></a></li>
+                        <li><a href="#" title="Visit Us at First Responder Network"><img src="http://localhost/phpcms/statics/images/yingtian/frn-glass-icon2-small.png" alt="Visit Us at First Responder Network" title="Visit Us at First Responder Network" height="36" width="35"></a></li>
+                        <li><a href="#" title="Visit Us at Calibration Gas"><img src="http://localhost/phpcms/statics/images/yingtian/calgas-glass-icon-small.png" alt="Visit Us at Calibration Gas" title="Visit Us at Calibration Gas" height="36" width="35"></a></li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p>Copyright © 2014 <a href="http://demo.cmsyou.com/blacken/" title="Onestop Laboratory Equipment" style="color:#fff;">Onestop Laboratory Equipment</a> demo.cmsyou.com/blacken  All Rights Reserved.</p>
+                    <div class="columnSpace"><p>Supported by <a href="http://www.cmsyou.com/" style="color:#fff;" target="_blank">CMSYOU</a>.</p>
+                        <script>
+                            $(".social li a img").each(function () {
+                                $(this).mouseover(function () {
+                                    src = $(this).attr("src");
+                                    $(this).attr("src", src.replace("_off", "_on"));
+                                });
+                                $(this).mouseout(function () {
+                                    src = $(this).attr("src");
+                                    $(this).attr("src", src.replace("_on", "_off"));
+                                });
+                            });</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></footer>
 </div>
-<script type="text/javascript">
-$(function(){
-	$(".picbig").each(function(i){
-		var cur = $(this).find('.img-wrap').eq(0);
-		var w = cur.width();
-		var h = cur.height();
-	   $(this).find('.img-wrap img').LoadImage(true, w, h,'http://localhost/phpcms/statics/images/msg_img/loading.gif');
-	});
-})
-</script>
-</body>
-</html>
+<script type="text/javascript">if (window.attachEvent)
+        window.attachEvent('onload', SubMenuItemHoverFunction);</script>
+<script type="text/javascript">$(function () {
+        $(".Carousel_750").carousel({visible: 5, scrollCount: 5, themeLayoutControlId: 750});
+    });</script>
+
+</body></html>
