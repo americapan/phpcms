@@ -18,11 +18,11 @@
                 <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>	
 
                 <div class="ControlHeader ControlHeader_359" style="margin-top:20px;">Recommended</div>
-                {pc:content action="category" catid="29" num="25" siteid="$siteid" order="listorder ASC"}
+                {pc:content  action="position" posid="10" catid="$catid"  order="listorder DESC" num="5"}
                 {loop $data $r}
                 <div class="ControlItem ControlItem_359">
                     <div class="ControlLink ControlLink_359">
-                        <a href="{$r[url]}" title="{$r[catname]}" class="ControlLink_Link ControlLink_Link_359">{$r[catname]}</a>
+                        <a href="{$r[url]}" title="{$r[title]}" class="ControlLink_Link ControlLink_Link_359">{$r[title]}</a>
                     </div>
                 </div>
                 {/loop}

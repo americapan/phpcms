@@ -27,12 +27,12 @@
                 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                 <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>	
 
-                <div class="ControlHeader ControlHeader_359" style="margin-top:20px;">Recommended222</div>
-                 <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=f362715af55bcc46495e1fb6ade66e57&action=position&posid=10&num=25&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'position')) {$data = $content_tag->position(array('posid'=>'10','order'=>'listorder ASC','limit'=>'25',));}?>
+                <div class="ControlHeader ControlHeader_359" style="margin-top:20px;">Recommended</div>
+                 <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=0dd5340c99f776e840048cf3adf2168c&action=position&posid=10&catid=%24catid&order=listorder+DESC&num=5\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'position')) {$data = $content_tag->position(array('posid'=>'10','catid'=>$catid,'order'=>'listorder DESC','limit'=>'5',));}?>
                 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                 <div class="ControlItem ControlItem_359">
                     <div class="ControlLink ControlLink_359">
-                        <a href="<?php echo $r['url'];?>" title="<?php echo $r['catname'];?>" class="ControlLink_Link ControlLink_Link_359"><?php echo $r['catname'];?></a>
+                        <a href="<?php echo $r['url'];?>" title="<?php echo $r['title'];?>" class="ControlLink_Link ControlLink_Link_359"><?php echo $r['title'];?></a>
                     </div>
                 </div>
                 <?php $n++;}unset($n); ?>
