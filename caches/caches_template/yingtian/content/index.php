@@ -42,42 +42,35 @@
                 <div id="ctl28_dvControlHeader" class="ControlHeader ControlHeader_181">Recommended</div>
 
                 <table id="ctl28_dlItems" style="width:100%;border-collapse:collapse;" border="0" cellspacing="0">
-                    <tbody><tr>
+                    <tbody>
+                        <tr>
+                            <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=7ef7dac58eb4e7875e94b9be2bf8720b&action=position&posid=20&order=listorder+DESC&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'position')) {$data = $content_tag->position(array('posid'=>'20','order'=>'listorder DESC','limit'=>'3',));}?>
+                            <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                             <td class="ControlItem" style="border-width:0px;height:0px;width:33.33333%;">
                                 <div id="ctl28_dlItems_ctl00_dvControlItem" class="ControlItem ControlItem_181">      
                                     <div class="FeaturedItemsItem">
-                                        <div class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=8" title="Automatic Sulfur Analyzer"><img id="ctl28_dlItems_ctl00_iThumbnail" class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181" src="<?php echo IMG_PATH;?>yingtian/thumb_178_122_20140326035251555.jpg" alt="Automatic Sulfur Analyzer" style="border-width:0px;" height="122" width="178"></a></div>
+                                        <div class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181">
+                                            <a href="<?php echo $r['url'];?>" title="<?php echo $r['title'];?>"><img id="ctl28_dlItems_ctl00_iThumbnail" class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181" src="<?php echo $r['thumb'];?>" alt="<?php echo $r['title'];?>" style="border-width:0px;" height="122" width="178"></a>
+                                        </div>
                                         <div class="FeaturedItemsPriceTab">
-                                            <div class="FeaturedItemsName"><a id="ctl28_dlItems_ctl00_hlProductName" class="ControlLink ControlLink_181" href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=8" title="Automatic Sulfur Analyzer">Automatic Sulfur Analyzer</a></div>
-                                            <div class="FeaturedItemsPrice"><span id="ctl28_dlItems_ctl00_ltrPrice"><span id="lblSalePriceArea_181_8218" class="lblSalePriceArea"><span id="lblSalePriceLabel_181_8218" class="lblSalePriceLabel">Sale: </span><span id="lblSalePrice_181_8218" class="lblSalePrice">$2700~6990</span></span></span></div>
+                                            <div class="FeaturedItemsName">
+                                                <a id="ctl28_dlItems_ctl00_hlProductName" class="ControlLink ControlLink_181" href="<?php echo $r['url'];?>" title="<?php echo $r['title'];?>"><?php echo $r['title'];?></a></div>
+                                            <div class="FeaturedItemsPrice">
+                                                <span id="ctl28_dlItems_ctl00_ltrPrice">
+                                                    <span id="lblSalePriceArea_181_8218" class="lblSalePriceArea">
+                                                        <span id="lblSalePrice_181_8218" class="lblSalePrice"><?php echo $r['Price'];?></span>                                                           
+                                                    </span>      
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-                            <td class="ControlItem" style="border-width:0px;height:0px;width:33.33333%;">
-                                <div id="ctl28_dlItems_ctl00_dvControlItem" class="ControlItem ControlItem_181">      
-                                    <div class="FeaturedItemsItem">
-                                        <div class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=18&amp;id=5" title="Onestop Laboratory Equipment 5"><img id="ctl28_dlItems_ctl00_iThumbnail" class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181" src="<?php echo IMG_PATH;?>yingtian/pro_5.jpg" alt="Onestop Laboratory Equipment 5" style="border-width:0px;" height="122" width="178"></a></div>
-                                        <div class="FeaturedItemsPriceTab">
-                                            <div class="FeaturedItemsName"><a id="ctl28_dlItems_ctl00_hlProductName" class="ControlLink ControlLink_181" href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=18&amp;id=5" title="Onestop Laboratory Equipment 5">Onestop Laboratory Equipment 5</a></div>
-                                            <div class="FeaturedItemsPrice"><span id="ctl28_dlItems_ctl00_ltrPrice"><span id="lblSalePriceArea_181_8218" class="lblSalePriceArea"><span id="lblSalePriceLabel_181_8218" class="lblSalePriceLabel">Sale: </span><span id="lblSalePrice_181_8218" class="lblSalePrice">$36.80</span></span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="ControlItem" style="border-width:0px;height:0px;width:33.33333%;">
-                                <div id="ctl28_dlItems_ctl00_dvControlItem" class="ControlItem ControlItem_181">      
-                                    <div class="FeaturedItemsItem">
-                                        <div class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=4" title="Food Lab Product Title 4"><img id="ctl28_dlItems_ctl00_iThumbnail" class="FeaturedItemsThumbNail FeaturedItemsThumbNail_181" src="<?php echo IMG_PATH;?>yingtian/pro_4.jpg" alt="Food Lab Product Title 4" style="border-width:0px;" height="122" width="178"></a></div>
-                                        <div class="FeaturedItemsPriceTab">
-                                            <div class="FeaturedItemsName"><a id="ctl28_dlItems_ctl00_hlProductName" class="ControlLink ControlLink_181" href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=4" title="Food Lab Product Title 4">Food Lab Product Title 4</a></div>
-                                            <div class="FeaturedItemsPrice"><span id="ctl28_dlItems_ctl00_ltrPrice"><span id="lblSalePriceArea_181_8218" class="lblSalePriceArea"><span id="lblSalePriceLabel_181_8218" class="lblSalePriceLabel">Sale: </span><span id="lblSalePrice_181_8218" class="lblSalePrice">$ 980.00</span></span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
+                            <?php $n++;}unset($n); ?>
+                            <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                         </tr>
-                    </tbody></table>
+                    </tbody>
+                </table>
             </div>
 
 
@@ -93,19 +86,23 @@
                                     <img id="ctl29_lvCarousel_imgPrevDisabled" class="CarouselPrevButtonDisabledImage" src="<?php echo IMG_PATH;?>yingtian/carousel-prev-disabled-horizontal.png" style="border-width:0px;"/>
                                 </div>
                             </td>
+                            <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=530ba187416676b2594f7f89b4042da9&action=position&posid=21&order=listorder+DESC&num=10\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'position')) {$data = $content_tag->position(array('posid'=>'21','order'=>'listorder DESC','limit'=>'10',));}?>
+                            <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                             <td class="CarouselItem">
                                 <div id="ctl29_lvCarousel_ctrl0_dvControlItem" class="ControlItem ControlItem_750">
                                     <table style="border:0; width: 100%;" cellpadding="0" cellspacing="0">
                                         <tbody>
                                             <tr>
-                                                <td style="text-align: center; height: 100px; width: 140px;" valign="center"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=4" title="Food Lab Product Title 4"><img id="ctl29_lvCarousel_ctrl0_iThumbnail" class="FeaturedItemsThumbnail" src="<?php echo IMG_PATH;?>yingtian/pro_4.jpg" alt="Food Lab Product Title 4" style="border-width:0px;" height="100" width="135"></a></td>
+                                                <td style="text-align: center; height: 100px; width: 140px;" valign="center"><a href="<?php echo $r['url'];?>" title="<?php echo $r['title'];?>"><img id="ctl29_lvCarousel_ctrl0_iThumbnail" class="FeaturedItemsThumbnail" src="<?php echo $r['thumb'];?>" alt="<?php echo $r['title'];?>" style="border-width:0px;" height="100" width="135"></a></td>
                                             </tr>
                                             <tr>
+
                                                 <td style="text-align: center;">
                                                     <div id="ctl29_lvCarousel_ctrl0_pnlProductName" class="ControlLink ControlLink_750">
-                                                        <a id="ctl29_lvCarousel_ctrl0_lnkProductName" href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=4">Food Lab Product Title 4</a>
+                                                        <a id="ctl29_lvCarousel_ctrl0_lnkProductName" href=<?php echo $r['url'];?>"><?php echo $r['title'];?></a>
                                                     </div>
                                                 </td>
+
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center;">
@@ -116,6 +113,8 @@
                                     </table>
                                 </div>
                             </td>
+                            <?php $n++;}unset($n); ?>
+                            <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                             <td valign="middle">
                                 <div id="ctl29_lvCarousel_dvCarouselNextButton" class="CarouselNextButton CarouselNextButton_750">
                                     <img id="ctl29_lvCarousel_imgNext" class="CarouselNextButtonImage" src="<?php echo IMG_PATH;?>yingtian/carousel-next-horizontal.png" style="border-width:0px;"/>
@@ -149,7 +148,7 @@
             <div class="Control Control_2459"><br>
                 <table class="centerTable"><tbody><tr><td style="background-color: rgb(242, 242, 242);"> 
                                 <div style="width: 395px; height: 250px; overflow: auto; padding: 5px; border: 1px;">
-                                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=8d10340c673a6791b47f3ef8bbdd58ee&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2823%2C24%2C25%2C26%2C27%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(23,24,25,26,27) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=8d10340c673a6791b47f3ef8bbdd58ee&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2823%2C24%2C25%2C26%2C27%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(23,24,25,26,27) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                                     <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                     <p><b style="line-height: 2em;"><?php echo date('Y-m-d',$r[inputtime]);?></b> - <a href="<?php echo $r['url'];?>" title="$r['title']"><?php echo str_cut($r['title'],100);?></a></p>
                                     <?php $n++;}unset($n); ?>
@@ -162,7 +161,7 @@
                                     post-sale integrated services.And foreign cooperators will enjoy the 
                                     service of "integral process" and "all-arrangement" supplied by our 
                                     professional and dedicated members.</p><br>            <hr>
-                                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=19fd0f9ebafc3c0fc1f02ca0a6fc97de&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2823%2C24%2C25%2C26%2C27%29+order+by+id+DESC&num=5&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(23,24,25,26,27) order by id DESC LIMIT 5");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=19fd0f9ebafc3c0fc1f02ca0a6fc97de&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2823%2C24%2C25%2C26%2C27%29+order+by+id+DESC&num=5&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(23,24,25,26,27) order by id DESC LIMIT 5");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                                 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <p><a href="<?php echo $r['url'];?>" title="$r['title']"><?php echo str_cut($r['title'],100);?></a></p>
                                 <?php $n++;}unset($n); ?>

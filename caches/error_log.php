@@ -316,6 +316,21 @@
 <?php exit;?>01-19 17:14:54 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
 <?php exit;?>01-19 17:15:56 | 2 | date() expects parameter 2 to be long, string given | phpcms\modules\formguide\templates\formguide_edit.tpl.php | 31
 <?php exit;?>01-19 17:16:05 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<<<<<<< HEAD
 <?php exit;?>01-19 17:19:56 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
 <?php exit;?>01-19 17:22:57 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
 <?php exit;?>01-19 17:23:24 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+=======
+<?php exit;?>01-19 23:04:12 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:04:25 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:05:05 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:05:30 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:13:36 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:13:49 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:14:35 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:14:46 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:15:05 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:15:20 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:15:40 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-19 23:15:54 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+>>>>>>> origin/master
