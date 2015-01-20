@@ -316,3 +316,6 @@
 <?php exit;?>01-19 17:14:54 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
 <?php exit;?>01-19 17:15:56 | 2 | date() expects parameter 2 to be long, string given | phpcms\modules\formguide\templates\formguide_edit.tpl.php | 31
 <?php exit;?>01-19 17:16:05 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-19 17:19:56 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-19 17:22:57 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-19 17:23:24 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
