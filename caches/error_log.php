@@ -334,3 +334,4 @@
 <?php exit;?>01-19 23:15:40 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
 <?php exit;?>01-19 23:15:54 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
 >>>>>>> origin/master
+<?php exit;?>01-20 08:55:26 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94

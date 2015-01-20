@@ -114,12 +114,8 @@
                                 </div>
                                 <div class="FeaturedItemsPrice">
                                     <span id="ctl28_dlItems_ctl01_ltrPrice">
-                                        <span id="lblSalePriceArea_181_6162" class="lblSalePriceArea">
-                                            {pc:get sql="select * from v9_goods_data where id=$r[id]" return="v"}
-                                            {loop $v $p}                
-                                                <span id="lblSalePrice_181_6162" class="lblSalePrice">{$p[Price]}</span>    
-                                            {/loop}
-                                            {/pc}                                              
+                                        <span id="lblSalePriceArea_181_6162" class="lblSalePriceArea">        
+                                                <span id="lblSalePrice_181_6162" class="lblSalePrice">{$r[Price]}</span>                                          
                                         </span>                                           
                                     </span>
                                 </div>
