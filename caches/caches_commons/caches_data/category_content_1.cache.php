@@ -967,7 +967,7 @@ return array (
     'parentdir' => 'Technicaldocuments/',
     'catdir' => 'Training',
     'url' => 'http://localhost/phpcms/index.php?m=content&c=index&a=lists&catid=26',
-    'items' => '0',
+    'items' => '1',
     'hits' => '0',
     'setting' => 'array (
   \'workflowid\' => \'\',

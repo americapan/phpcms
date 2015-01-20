@@ -24,6 +24,7 @@ class index {
 		$type_module = getcache('type_module_'.$siteid);
 
 		if(isset($_GET['q'])) {
+                    
 			if(trim($_GET['q'])=='') {
 				header('Location: '.APP_PATH.'index.php?m=search');exit;
 			}
@@ -76,13 +77,14 @@ class index {
 				$segment = new segment();
 				//分词结果
 				$segment_q = $segment->get_keyword($segment->split_result($q));
+                               
 				//如果分词结果为空
 				if(!empty($segment_q)) {
 					$sql = "`siteid`= '$siteid' AND `typeid` = '$typeid' $sql_time AND MATCH (`data`) AGAINST ('$segment_q' IN BOOLEAN MODE)";
 				} else {
 					$sql = "`siteid`= '$siteid' AND `typeid` = '$typeid' $sql_time AND `data` like '%$q%'";
 				}
-
+                                
 				$result = $this->db->listinfo($sql, 'searchid DESC', $page, 10);
 			}
 

@@ -3,31 +3,20 @@ return array (
   12 => 
   array (
     'typeid' => '53',
-    'name' => '商品展示模型',
+    'name' => 'Products',
     'sort' => '0',
   ),
   1 => 
   array (
     'typeid' => '1',
-    'name' => '新闻',
+    'name' => 'News',
     'sort' => '1',
-  ),
-  3 => 
-  array (
-    'typeid' => '3',
-    'name' => '图片',
-    'sort' => '2',
   ),
   2 => 
   array (
     'typeid' => '2',
-    'name' => '下载',
+    'name' => 'DownLoads',
     'sort' => '3',
-  ),
-  'special' => 
-  array (
-    'typeid' => '52',
-    'name' => '专题',
   ),
 );
 ?>

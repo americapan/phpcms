@@ -18,7 +18,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
     </head>
-    
+
     <body class="OneColumn">
         <div class="Layout">
             <header class="LayoutTop">
@@ -26,7 +26,7 @@
                     <div class="LayoutTopMiddle">
                         <div class="LayoutTopLeft">
                             <div class="Control Control_306">
-                                <a href="{siteurl($siteid)}" title="Onestop - Hebi City Thermal Meter Instrument Factory"><img src="{IMG_PATH}yingtian/logo.png" alt="Onestop - Hebi City Thermal Meter Instrument Factory" style="margin-top:12px; margin-left:15px;"/></a>
+                                <a href="{siteurl($siteid)}"><img src="{IMG_PATH}yingtian/logo.png"  alt="{$SEO['name']}"  style="margin-top:12px; margin-left:15px;"/></a>
                                 <a class="mobilecall" href="tel:+86-392-3311689"><img src="{IMG_PATH}yingtian/blank.png" style="margin-left:315px;margin-top:-65px;float:left;"/></a>
                             </div>
                         </div>
@@ -35,12 +35,12 @@
                                 <div id="utilnav">
                                     <div id="utilnav">
                                         <div class="Control Control_311">
-                                            <form action="http://demo.cmsyou.com/blacken/index.php" method="get" target="_blank">
-                                                <input name="m" value="search" type="hidden"/>
-                                                <input name="c" value="index" type="hidden"/>
-                                                <input name="a" value="init" type="hidden"/>
-                                                <input name="typeid" value="3" id="typeid" type="hidden"/>
-                                                <input name="siteid" value="1" id="siteid" type="hidden"/>
+                                            <form action="{APP_PATH}index.php" method="get" target="_blank">
+                                                <input type="hidden" name="m" value="search"/>
+                                                <input type="hidden" name="c" value="index"/>
+                                                <input type="hidden" name="a" value="init"/>
+                                                <input type="hidden" name="typeid" value="{$typeid}" id="typeid"/>
+                                                <input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
                                                 <input class="AutocompleteSearchBox" name="q" id="q" value="Search Products" onfocus="if (this.value == 'Search Products')this.value = ''" onblur="if (this.value == '')this.value = 'Search Products'" onkeydown="if ((event.which & amp; & amp; event.which == 13) || (event.keyCode & amp; & amp; event.keyCode == 13)){universalSearchUrl('txt_input'); return false; } else return true;" onkeypress="if ((event.which & amp; & amp; event.which == 13) || (event.keyCode & amp; & amp; event.keyCode == 13)){universalSearchUrl('txt_input'); return false; } else return true;" type="text"/>
                                                 <input name="btnSearchBox" class="ThemeButton GoThemeButton SearchGoThemeButton" title="Search" value="Go" type="submit"/>
                                             </form>

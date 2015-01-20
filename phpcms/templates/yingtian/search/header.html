@@ -1,16 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta http-equiv="x-ua-compatible" content="IE=EmulateIE9"/>
-        <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
-        <meta name="keywords" content="{$SEO['keyword']}"/>
-        <meta name="description" content="{$SEO['description']}"/>
-        <link rel="stylesheet" type="text/css" href="{CSS_PATH}yingtian/style.css"></link>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <meta http-equiv="x-ua-compatible" content="IE=EmulateIE9"></meta>
+        <title>{$SEO['site_title']}{$search_q} - Powered by PHPCMS</title>
+        <link href="{CSS_PATH}yingtian/style.css" rel="stylesheet" type="text/css"></link>
+        <link href="{CSS_PATH}yingtian/search.css" rel="stylesheet" type="text/css"></link>
         <script type="text/javascript" src="{JS_PATH}yingtian/jquery.js"></script>
-        <script type="text/javascript" src="{JS_PATH}yingtian/ac_modal.js"></script>
-        <script type="text/javascript" src="{JS_PATH}yingtian/ac_002.js"></script>
-        <script type="text/javascript" src="{JS_PATH}yingtian/ac.js"></script>
+        <script type="text/javascript" src="{JS_PATH}yingtian/cookie.js"></script>
+        <script type="text/javascript" src="{JS_PATH}yingtian/search_common.js"></script>
         <!--[if lt IE 9]>
         <script src="{JS_PATH}yingtian/html5.js"></script>
         <![endif]-->
@@ -18,7 +16,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
     </head>
-
     <body class="LeftColumn">
         <div class="Layout">
             <header class="LayoutTop">
@@ -26,9 +23,12 @@
                     <div class="LayoutTopMiddle">
                         <div class="LayoutTopLeft">
                             <div class="Control Control_306">
-                                <a href="{siteurl($siteid)}" title="{$SEO['name']}"><img src="{IMG_PATH}yingtian/logo.png" alt="{$SEO['name']}" style="margin-top:12px; margin-left:15px;"/></a>
-                                <a class="mobilecall" href="tel:+86-392-3311689"><img src="{IMG_PATH}yingtian/blank.png" style="margin-left:315px;margin-top:-65px;float:left;"/></a>
+                                <a href="{siteurl($siteid)}" title="{$SEO['name']}"><img src="{IMG_PATH}yingtian/logo.png"  alt="{$SEO['name']}" style="margin-top:12px; margin-left:15px;"></a>
+                                <a class="mobilecall" href="tel:+86-392-3311689">
+                                    <img src="{IMG_PATH}yingtian/blank.png" style="margin-left:315px;margin-top:-65px;float:left;">
+                                </a>
                             </div>
+
                         </div>
                         <div class="LayoutTopRight">
                             <div class="Control Control_309">
@@ -48,6 +48,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div style="clear:both"></div>
                     </div>
@@ -55,10 +56,10 @@
                         <div id="leftRibbon"></div>
                         <div id="rightRibbon"></div>
                         <div class="inner">
-                            <!--一级导航栏结束-->
+
                             <div class="HorizontalNav Control Control_312">
-                                {pc:content action="category" catid="28" num="25" siteid="$siteid" order="listorder ASC"}
-                                {loop $data $r}
+                                {pc:content action="category" catid="28" num="25" siteid="$siteid" order="listorder ASC" return="cateinfo"}
+                                {loop $cateinfo $r}
                                 <div class="HorizontalNavItem ControlLink_312">
                                     <a class="HorizontalNavLink_312" href="{$r[url]}">{$r[catname]}</a>
                                     <div class="HorizontalNavSeperator ControlLinkSeperator_312"></div>
@@ -80,21 +81,19 @@
                                 {/pc}
                                 <div style="clear:both;"></div>
                             </div>
-                            <!--一级导航栏结束-->
-                            <!--网站介绍开始-->
+
                             <div id="ctl43_spHorizontalNav" class="HorizontalNav Control Control_313">
-                                {pc:content action="category" catid="1" num="15" siteid="$siteid" order="listorder ASC"}
+                                {pc:content action="category" catid="1" num="15" siteid="$siteid" order="listorder ASC" return="menu"}
                                 <div class="HorizontalNavItem ControlLink_313"><a href="{siteurl($siteid)}">Home</a></div>
-                                {loop $data $r}
+                                {loop $menu $r}
                                 <div class="HorizontalNavItem ControlLink_313"><a href="{$r[url]}" title="{$r[catname]}">{$r[catname]}</a></div>
                                 {/loop}
                                 {/pc}
                                 <div style="clear:both;"></div>
                             </div>
-                            <!--网站介绍结束-->
                         </div>
                     </div>
                 </div>
                 <div class="pagewidth">
                 </div>
-            </header>     
+            </header>

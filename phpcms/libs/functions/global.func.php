@@ -1485,6 +1485,7 @@ function seo($siteid, $catid = '', $title = '', $description = '', $keyword = ''
 		$cat['setting'] = string2array($cat['setting']);
 	}
 	$seo['site_title'] =isset($site['site_title']) && !empty($site['site_title']) ? $site['site_title'] : $site['name'];
+        $seo['name'] =  $site['name'];
 	$seo['keyword'] = !empty($keyword) ? $keyword : $site['keywords'];
 	$seo['description'] = isset($description) && !empty($description) ? $description : (isset($cat['setting']['meta_description']) && !empty($cat['setting']['meta_description']) ? $cat['setting']['meta_description'] : (isset($site['description']) && !empty($site['description']) ? $site['description'] : ''));
 	$seo['title'] =  (isset($title) && !empty($title) ? $title.' - ' : '').(isset($cat['setting']['meta_title']) && !empty($cat['setting']['meta_title']) ? $cat['setting']['meta_title'].' - ' : (isset($cat['catname']) && !empty($cat['catname']) ? $cat['catname'].' - ' : ''));

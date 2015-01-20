@@ -1,0 +1,112 @@
+{template 'search', 'header'}
+<section class="LayoutMiddle pagewidth">
+    <div style="clear:both;"></div>
+    <aside class="LayoutLeftColumn">
+        <div class="LayoutLeftColumnInner">
+            <div id="ctl27_dvControl" class="Control CategoryNavigationLinks Control_359">
+                <div id="ctl27_dvControlHeader" class="ControlHeader ControlHeader_359">Product Categories</div>
+                {pc:content action="category" catid="28" num="25" siteid="$siteid" order="listorder ASC"}
+                {loop $data $r}
+                <div class="ControlItem ControlItem_359">
+                    <div class="ControlLink ControlLink_359">
+                        <a href="{$r[url]}" title="{$r[catname]}" class="ControlLink_Link ControlLink_Link_359">{$r[catname]}</a>
+                    </div>
+                </div>
+                {/loop}
+                {/pc}
+                <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>	
+
+                <div class="ControlHeader ControlHeader_359" style="margin-top:20px;">Recommended</div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=7&amp;id=10" title="Agricultrual Solution Title 5" class="ControlLink_Link ControlLink_Link_359">Agricultrual Solution Title 5</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=7&amp;id=9" title="Environmental Solution Title 4" class="ControlLink_Link ControlLink_Link_359">Environmental Solution Title 4</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=7&amp;id=8" title="NDT Solution Title 3" class="ControlLink_Link ControlLink_Link_359">NDT Solution Title 3</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=18&amp;id=7" title="Onestop Lab Product title 7" class="ControlLink_Link ControlLink_Link_359">Onestop Lab Product title 7</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=7&amp;id=6" title="Food Lab Solution Title 1" class="ControlLink_Link ControlLink_Link_359">Food Lab Solution Title 1</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=18&amp;id=6" title="Onestop Laboratory 6" class="ControlLink_Link ControlLink_Link_359">Onestop Laboratory 6</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=18&amp;id=5" title="Onestop Laboratory Equipment 5" class="ControlLink_Link ControlLink_Link_359">Onestop Laboratory Equipment 5</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=22&amp;id=4" title="Our manufacture are attending 2013 China" class="ControlLink_Link ControlLink_Link_359">Our manufacture are attending 2013 China</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=12&amp;id=4" title="Food Lab Product Title 4" class="ControlLink_Link ControlLink_Link_359">Food Lab Product Title 4</a></div></div>
+                <div class="ControlItem ControlItem_359"><div class="ControlLink ControlLink_359"><a href="http://demo.cmsyou.com/blacken/index.php?m=content&amp;c=index&amp;a=show&amp;catid=22&amp;id=2" title="Swimming pool heat pump" class="ControlLink_Link ControlLink_Link_359">Swimming pool heat pump</a></div></div>
+                <div id="ctl27_dvControlFooter" class="ControlFooter ControlFooter_359"></div>	
+            </div>
+
+            <div id="ctl28_dvControlHeader" class="ControlHeader ControlHeader_528"></div>
+        </div>
+    </aside>
+    <section class="LayoutContent">
+        <div class="LayoutContentInner">
+            <span id="lblCategoryTrail" class="CategoryCategoryTrail">
+                <a href="{siteurl($siteid)}">Home</a> &gt; Search
+            </span>
+            <br><br>
+            <div><span id="lblCategoryHeader" class="CategoryCategoryHeader"></span></div>
+            <div id="dvWrapControl2250" style="clear: both;">
+                <div id="ctl45_dvControl" class="Control ProductDisplay Control_2250">
+                    <div class="prolist">
+                        <div class="l">
+                            <div class="jg">
+                                <div class="sr_head">
+                                    <div class="l" id="search">
+                                        {php $j=0}
+                                        {loop $search_model $k=>$v}
+                                        {php $j++;}
+                                        <a href="javascript:;" onclick="setmodel({$v['typeid']}, $(this));" {if $j==1 && $typeid=$v['typeid']} class="on" {/if}>{$v['name']}</a>{if $j != count($search_model)} - {/if}
+                                        {/loop}
+                                        {php unset($j);}							
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sr_frm_box">
+                                <form name="search" type="get">
+                                    <div class="sr_frmipt">
+                                        <input name="m" value="search" type="hidden"/>
+                                        <input name="c" value="index" type="hidden"/>
+                                        <input name="a" value="init" type="hidden"/>
+                                        <input name="typeid" value="3" id="typeid" type="hidden"/>
+                                        <input name="siteid" value="1" id="siteid" type="hidden"/>
+                                        <input name="q" class="ipt" id="q" value="Agricultrual" type="text"/>
+                                        <div class="sp" id="aca">▼</div><input class="ss_btn" value="Search" type="submit"></div>
+                                </form>
+                                {if $setting['suggestenable']}
+                                <script type="text/javascript" src="{JS_PATH}jquery.suggest.js"></script>
+                                <script type="text/javascript" src="{JS_PATH}search_suggest.js"></script>
+                                {/if}
+                                <script language="JavaScript">
+                                            <!--
+                                                    $(document).ready(function () {
+                                                $("#q").focus();
+                                            });
+                                            //-->
+                                </script>
+                                <div id="sr_infos" class="wrap sr_infoul">
+                                </div>
+                            </div>
+                            <div class="jg">There is 0 results (Search took 0.19 seconds).</div>
+                        </div>
+                        <div class="clear h10"></div>
+                        <div id="list_wrap">
+                            <div class="bd">
+                                <ul class="list_p">
+                                </ul>
+                                <div class="pagenavi"></div>
+                            </div>
+                        </div>
+                        <div id="list_wrap">
+                            <div class="bd">
+                                <ul class="list_p">
+                                    <li>Sorry, there is no results found, please try again...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear h10"></div>
+                    </div>
+
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </section>
+</section>
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+{template "content","footer"}

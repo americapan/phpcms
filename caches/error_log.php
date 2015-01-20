@@ -335,3 +335,12 @@
 <?php exit;?>01-19 23:15:54 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
 >>>>>>> origin/master
 <?php exit;?>01-20 08:55:26 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-20 10:09:16 | 2 | Illegal string offset 'enablehits' | phpcms\modules\poster\index.php | 104
+<?php exit;?>01-20 10:48:24 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-20 10:54:28 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-20 10:55:40 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-20 11:00:38 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_type.php | 94
+<?php exit;?>01-20 11:00:46 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_type.php | 94
+<?php exit;?>01-20 11:01:59 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_type.php | 94
+<?php exit;?>01-20 11:02:12 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_type.php | 94
+<?php exit;?>01-20 11:03:12 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_admin.php | 85
