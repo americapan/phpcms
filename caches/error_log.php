@@ -344,3 +344,10 @@
 <?php exit;?>01-20 11:01:59 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_type.php | 94
 <?php exit;?>01-20 11:02:12 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_type.php | 94
 <?php exit;?>01-20 11:03:12 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_admin.php | 85
+<?php exit;?>01-20 14:55:22 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>01-20 15:25:06 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-20 15:25:31 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-20 15:26:24 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-20 15:27:42 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-20 15:28:04 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
+<?php exit;?>01-20 15:28:28 | 8192 | Function split() is deprecated | caches\caches_model\caches_data\content_update.class.php | 70
